@@ -15,11 +15,17 @@ import participants from "./participants";
 //importer les particpants
 
 function ParticipantList() {
-  // console.log(participants);
   return (
     <ul>
-      <Participant name="Anaïs" hasToken={true} />
-      <Participant name="Angélique" hasToken={false} />
+      {participants.map(function(participant) {
+        return (
+          <Participant
+            key={participant.name}
+            name={participant.name}
+            hasToken={participant.hasToken}
+          />
+        );
+      })}
     </ul>
   );
 }
