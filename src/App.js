@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ParticipantList from "./ParticipantList";
+
+// Quel(s) composant(s) ai je besoin de créer ?
+// Composant que je veux afficher est une liste de participants
+// Participants
+// ParticipantList
+// La majuscule c'est pour et seuleument pour les noms de composants
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Afficher la liste des participants
+      <ParticipantList />
     </div>
   );
 }
